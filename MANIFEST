@@ -1,4 +1,6 @@
 Changes
+COPYRIGHT
+HACKING
 inc/Module/AutoInstall.pm
 inc/Module/Install.pm
 inc/Module/Install/AutoInstall.pm
@@ -23,6 +25,7 @@ lib/Die/Hard.pm
 LICENSE
 Makefile.PL
 MANIFEST			This list of files
+META.ttl
 META.yml
 meta/changes.pret
 meta/doap.pret

@@ -28,7 +28,18 @@ DESCRIPTION
 
     "last_error"
         If the last proxied method call died, then this attribute will
-        contain the error. Otherwise will be false (undef or empty string).
+        contain the error. Otherwise will be undef.
+
+  Methods
+    "isa"
+        Tells lies; claims to be the object it's proxying.
+
+    "DOES"
+        Tells the truth; claims to do the object it's proxying.
+
+    "can"
+        Tells the truth; claims it can do anything the object it's proxying
+        can do.
 
 BUGS
     Please report any bugs to
@@ -41,7 +52,7 @@ AUTHOR
     Toby Inkster <tobyink@cpan.org>.
 
 COPYRIGHT AND LICENCE
-    This software is copyright (c) 2012 by Toby Inkster.
+    This software is copyright (c) 2012-2013 by Toby Inkster.
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.
