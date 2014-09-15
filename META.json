@@ -4,7 +4,7 @@
       "Toby Inkster (TOBYINK) <tobyink@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Moose::Meta::Class::__ANON__::SERIAL::7 version , CPAN::Meta::Converter version 2.140640",
+   "generated_by" : "Dist::Inkt::Profile::TOBYINK version 0.021, CPAN::Meta::Converter version 2.140640",
    "keywords" : [],
    "license" : [
       "perl_5"
@@ -32,7 +32,8 @@
       },
       "runtime" : {
          "requires" : {
-            "Moo" : "0"
+            "Moo" : "0",
+            "perl" : "5.008"
          }
       },
       "test" : {
@@ -45,19 +46,24 @@
    "provides" : {
       "Die::Hard" : {
          "file" : "lib/Die/Hard.pm",
-         "version" : "0.003"
+         "version" : "0.004"
       }
    },
    "release_status" : "stable",
    "resources" : {
-      "X_identifier" : "http://purl.org/NET/cpan-uri/dist/Die-Hard/project",
       "bugtracker" : {
          "web" : "http://rt.cpan.org/Dist/Display.html?Queue=Die-Hard"
       },
       "homepage" : "https://metacpan.org/release/Die-Hard",
       "license" : [
          "http://dev.perl.org/licenses/"
-      ]
+      ],
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/tobyink/p5-die-hard.git",
+         "web" : "https://github.com/tobyink/p5-die-hard"
+      },
+      "x_identifier" : "http://purl.org/NET/cpan-uri/dist/Die-Hard/project"
    },
-   "version" : "0.003"
+   "version" : "0.004"
 }

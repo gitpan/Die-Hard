@@ -7,7 +7,7 @@ my $meta = {
   "abstract"       => "objects as resistant to dying as John Maclane",
   "author"         => ["Toby Inkster (TOBYINK) <tobyink\@cpan.org>"],
   "dynamic_config" => 0,
-  "generated_by"   => "Moose::Meta::Class::__ANON__::SERIAL::7 version , CPAN::Meta::Converter version 2.140640",
+  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.021, CPAN::Meta::Converter version 2.140640",
   "keywords"       => [],
   "license"        => ["perl_5"],
   "meta-spec"      => {
@@ -18,18 +18,23 @@ my $meta = {
   "no_index"       => { directory => ["eg", "examples", "inc", "t", "xt"] },
   "prereqs"        => {
                         configure => { requires => { "ExtUtils::MakeMaker" => 6.17 } },
-                        runtime => { requires => { Moo => 0 } },
+                        runtime => { requires => { Moo => 0, perl => 5.008 } },
                         test => { requires => { "Test::Exception" => 0, "Test::More" => 0.61 } },
                       },
-  "provides"       => { "Die::Hard" => { file => "lib/Die/Hard.pm", version => 0.003 } },
+  "provides"       => { "Die::Hard" => { file => "lib/Die/Hard.pm", version => 0.004 } },
   "release_status" => "stable",
   "resources"      => {
                         bugtracker   => { web => "http://rt.cpan.org/Dist/Display.html?Queue=Die-Hard" },
                         homepage     => "https://metacpan.org/release/Die-Hard",
                         license      => ["http://dev.perl.org/licenses/"],
-                        X_identifier => "http://purl.org/NET/cpan-uri/dist/Die-Hard/project",
+                        repository   => {
+                                          type => "git",
+                                          url  => "git://github.com/tobyink/p5-die-hard.git",
+                                          web  => "https://github.com/tobyink/p5-die-hard",
+                                        },
+                        x_identifier => "http://purl.org/NET/cpan-uri/dist/Die-Hard/project",
                       },
-  "version"        => 0.003,
+  "version"        => 0.004,
 };
 
 my %dynamic_config;

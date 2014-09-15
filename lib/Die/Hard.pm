@@ -9,7 +9,7 @@ use if $] < 5.010, 'UNIVERSAL::DOES';
 BEGIN {
 	no warnings;
 	$Die::Hard::AUTHORITY = 'cpan:TOBYINK';
-	$Die::Hard::VERSION   = '0.003';
+	$Die::Hard::VERSION   = '0.004';
 }
 
 has proxy_for => (
@@ -184,13 +184,16 @@ L<http://rt.cpan.org/Dist/Display.html?Queue=Die-Hard>.
 
 L<No::Die>.
 
+The C<< $_try >> function from L<Object::Util> is a different way to
+achieve a similar effect.
+
 =head1 AUTHOR
 
 Toby Inkster E<lt>tobyink@cpan.orgE<gt>.
 
 =head1 COPYRIGHT AND LICENCE
 
-This software is copyright (c) 2012-2013 by Toby Inkster.
+This software is copyright (c) 2012-2014 by Toby Inkster.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
